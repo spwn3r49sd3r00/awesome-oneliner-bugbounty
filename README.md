@@ -82,3 +82,7 @@ curl -s https://dns.bufferover.run/dns?q=.DOMAIN.com |jq -r .FDNS_A[]|cut -d',' 
 ```bash
 whois -h whois.radb.net -i origin -T route $(whois -h whois.radb.net $1 | grep origin: | awk '{print $NF}' | head -1) | grep -w "route:" | awk '{print $NF}' | sort -n
 ```
+### When taking out parameters from a waybackurls list, one can try this:
+> @shail_official
+```bash
+cat waybackurls.txt | grep"[=?]" > wayback_params.txt
