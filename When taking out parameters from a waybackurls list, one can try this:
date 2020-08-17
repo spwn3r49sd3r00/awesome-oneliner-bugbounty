@@ -1,0 +1,1 @@
+cat waybackurls.txt | grep "[=?]" > wayback_params.txt
