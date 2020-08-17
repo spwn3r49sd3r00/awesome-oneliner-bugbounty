@@ -92,3 +92,4 @@ cat waybackurls.txt | grep"[=?]" > wayback_params.txt
 ```bash
 1. Find favicon's exact URL from known site. Calculate hash with get-shodan-favicon-hash.py.
 2. Search on Shodan for: http.favicon.hash:<FAV_ID>
+```
