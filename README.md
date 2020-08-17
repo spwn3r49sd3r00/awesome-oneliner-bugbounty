@@ -86,3 +86,4 @@ whois -h whois.radb.net -i origin -T route $(whois -h whois.radb.net $1 | grep o
 > @shail_official
 ```bash
 cat waybackurls.txt | grep"[=?]" > wayback_params.txt
+```
